@@ -142,7 +142,7 @@
   const chatbotSend = document.getElementById('chatbot-send');
 
   // n8n Webhook URL
-  const N8N_WEBHOOK_URL = 'https://modo-sinaptico-n8n-c83585-46-225-98-56.traefik.me/webhook/chatbot-webhook';
+  const N8N_WEBHOOK_URL = 'https://modo-sinaptico-n8n-c83585-46-225-98-56.traefik.me/webhook/webbot';
 
   function toggleChatbot() {
     chatbotWindow.classList.toggle('closed');
@@ -243,7 +243,7 @@
         } else if (text.includes('pro') || text.includes('base') || text.includes('premium')) {
           appendMessage(`Has seleccionado información sobre el ${this.textContent.trim()}. ¡Gran elección! ¿En qué ciudad se encuentra tu clínica para empezar con el demo?`, true);
         } else {
-          appendMessage(`Hola! Me contacto desde la landing de Modo Sináptico.\n\n¿Cuál es el nombre de tu clínica?`, true);
+          appendMessage(`Hola! Me contacto para mi Demo.\n\n¿Cuál es el nombre de tu clínica?`, true);
         }
       }
     });
